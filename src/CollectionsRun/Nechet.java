@@ -1,7 +1,6 @@
 package CollectionsRun;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 import java.util.Set;
@@ -21,17 +20,20 @@ public class Nechet {
         System.out.println(mix);
         System.out.println(countUnique(mix));
         System.out.println(countUnique2(mix));
-        System.out.println(mix1(mix));
+        System.out.println(mixmix(mix));
 
     }
 
-    static ArrayList<Integer> mix1 (ArrayList<Integer> mix1) { // метод заданийе 1
-        for (int i = 0; i < mix1.size(); i++) {
-            if (mix1.get(i) % 2 == 0) {
-                mix1.remove(mix1.get(i));
+    static List<Integer> mixmix (ArrayList<Integer> mix1) { // метод заданийе 1
+        List<Integer> mix2 = new ArrayList<>() {
+        };
+        for (int i = 0, j=0; i < mix1.size(); i++) {
+            if (mix1.get(i) % 2 != 0) {
+                mix2.add(mix1.get(i));
+                j++;
             }
         }
-        return mix1;
+        return mix2;
     }
 
     static int countUnique(ArrayList<Integer> mix1) { // метод задание 2
