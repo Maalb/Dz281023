@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+import java.util.Set;
+import java.util.HashSet;
+
 public class Nechet {
     public static void main(String[] args) {
         ArrayList<Integer> mix = new ArrayList<>(){};
@@ -17,6 +20,7 @@ public class Nechet {
 
         System.out.println(mix);
         System.out.println(countUnique(mix));
+        System.out.println(countUnique2(mix));
         System.out.println(mix1(mix));
 
     }
@@ -39,6 +43,12 @@ public class Nechet {
                 mix2.add(mix1.get(i));
             }
         }
+        return mix2.size();
+    }
+
+    static int countUnique2(ArrayList<Integer> mix1) { // метод задание 2 c HashSet
+
+        Set<Integer> mix2 = new HashSet<>(mix1);
         return mix2.size();
     }
 
