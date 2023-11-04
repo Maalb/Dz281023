@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Nechet {
     public static void main(String[] args) {
-        List<Integer> mix = new ArrayList<>(){};
-        List<Integer> nechet = new ArrayList<>(){};
+        ArrayList<Integer> mix = new ArrayList<>(){};
+
         mix.add(1);
         mix.add(4);
         mix.add(6);
@@ -15,7 +15,7 @@ public class Nechet {
         mix.add(8);
 
         System.out.println(mix);
-        System.out.println(mix1((ArrayList<Integer>) mix));
+        System.out.println(mix1(mix));
     }
 
     static ArrayList<Integer> mix1 (ArrayList<Integer> mix1) {
