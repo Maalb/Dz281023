@@ -27,10 +27,9 @@ public class Nechet {
     static List<Integer> mixmix (ArrayList<Integer> mix1) { // метод заданийе 1
         List<Integer> mix2 = new ArrayList<>() {
         };
-        for (int i = 0, j=0; i < mix1.size(); i++) {
+        for (int i = 0; i < mix1.size(); i++) {
             if (mix1.get(i) % 2 != 0) {
                 mix2.add(mix1.get(i));
-                j++;
             }
         }
         return mix2;
