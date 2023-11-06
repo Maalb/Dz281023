@@ -27,7 +27,6 @@ public class TextFrequancy {
         }
         return words1;
     }
-
     static String bezZnakov(String sss){
         String ss = sss.replaceAll("[^A-Za-zА-Яа-я0-9]", " ");
         return ss;
