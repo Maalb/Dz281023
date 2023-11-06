@@ -14,11 +14,15 @@ public class TextFrequancy {
                 "Это произошло как-то весенним вечером года два тому назад.";
 
         System.out.println(words(s));
+
     }
-    static Map words(String bezZnakov){
+
+    static Map words(String sss){
+        String ss = sss.replaceAll("[^A-Za-zА-Яа-я0-9]", " ")
+                .replaceAll("  ", " ");
         Map<String, Integer> words1 = new HashMap<>();
-        String[] ss = bezZnakov.split(" ");
-        for (String word: ss) {
+        String[] ss1 = ss.split(" ");
+        for (String word: ss1) {
             if (words1.containsKey(word)){
                 words1.put(word, words1.get(word) +1);
             } else {
@@ -27,8 +31,5 @@ public class TextFrequancy {
         }
         return words1;
     }
-    static String bezZnakov(String sss){
-        String ss = sss.replaceAll("[^A-Za-zА-Яа-я0-9]", " ");
-        return ss;
-    }
+
 }
