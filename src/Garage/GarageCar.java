@@ -1,6 +1,7 @@
 package Garage;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,6 +16,10 @@ public class GarageCar {
         garage1.carGoIn(trackBlack.getType());
         garage1.carGoIn(greenBus.getType());
         garage1.carGoIn(yellowCab.getType());
+
+        System.out.println(garage1);
+
+        garage1.carGoOut(greenBus.getType());
 
         System.out.println(garage1);
 

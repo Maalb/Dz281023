@@ -31,6 +31,10 @@ public class Garage {
         }
     }
 
+    @Override
+    public String toString() {
+        return garage.toString();
+    }
 }
 
 

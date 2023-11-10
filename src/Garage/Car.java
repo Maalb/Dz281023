@@ -2,7 +2,7 @@ package Garage;
 
 import java.util.Objects;
 
-abstract public class Car implements CarType {
+abstract public class Car {
     private String type;
     private String marka;
     private String model;
@@ -18,7 +18,6 @@ abstract public class Car implements CarType {
         this.color = color;
     }
 
-    @Override
     public String getType() {
         return type;
     }
